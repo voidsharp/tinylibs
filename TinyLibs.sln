@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiny", "Tiny\Tiny.csproj", "{5FEE71CC-80AA-42B4-92FC-34777B61E544}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E76C12E1-B2DC-40AA-9668-754477426AEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiny", "tests\Tiny\Tiny.csproj", "{63E690D6-781A-4C53-ADB3-513C0B7D715D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{5FEE71CC-80AA-42B4-92FC-34777B61E544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FEE71CC-80AA-42B4-92FC-34777B61E544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FEE71CC-80AA-42B4-92FC-34777B61E544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E690D6-781A-4C53-ADB3-513C0B7D715D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E690D6-781A-4C53-ADB3-513C0B7D715D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E690D6-781A-4C53-ADB3-513C0B7D715D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E690D6-781A-4C53-ADB3-513C0B7D715D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63E690D6-781A-4C53-ADB3-513C0B7D715D} = {E76C12E1-B2DC-40AA-9668-754477426AEE}
 	EndGlobalSection
 EndGlobal
