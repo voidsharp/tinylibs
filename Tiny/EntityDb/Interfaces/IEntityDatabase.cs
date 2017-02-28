@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace Tiny.EntityDb
+﻿namespace Tiny.EntityDb
 {
-    public interface IEntityDatabase<T> where T : IEqualityComparer
+    public interface IEntityDatabase<in T> where T : struct
     {
-        IEnumerable<T> GetAllElements();
         int Add(T itemToAdd);
+        bool Remove(T elementToremove);
+        int Count { get; }
         void Commit();
-        IEnumerable<T> FirstOrDefault(Func<T, bool> predicate);
+
     }
 }
