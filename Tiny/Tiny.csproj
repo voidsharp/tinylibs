@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tiny</RootNamespace>
     <AssemblyName>Tiny</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -52,6 +52,7 @@
     <Compile Include="EntityDb\Interfaces\IDataStreamProvider.cs" />
     <Compile Include="EntityDb\Interfaces\IEntityDatabase.cs" />
     <Compile Include="EntityDb\JsonBaseEntityDatabase.cs" />
+    <Compile Include="HashFunctions\Crc32.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SomeDir\Interfaces\IInterface.cs" />
   </ItemGroup>
