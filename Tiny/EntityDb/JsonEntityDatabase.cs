@@ -10,14 +10,15 @@ namespace Tiny.EntityDb
 {
 
 
-    public class JsonBaseEntityDatabase<T> : BaseEntityDatabase<T> where T : struct
+    public class JsonEntityDatabase<T> : BaseEntityDatabase<T> where T : struct
     {
         bool disposed;
         bool isDbFileInitialised;
         private bool isChanged;
 
-        public JsonBaseEntityDatabase(IDataStream dataStream) : base(dataStream)
+        public JsonEntityDatabase(IDataStream dataStream) : base(dataStream)
         {
+
         }
 
         public override int Add(T elementToAdd)
@@ -26,7 +27,7 @@ namespace Tiny.EntityDb
             return base.Add(elementToAdd);
         }
 
-        protected override void GetInitialData()
+        public override void GetInitialData()
         {
             elements = ReadRecordsFromDatabase();
         }
@@ -86,7 +87,7 @@ namespace Tiny.EntityDb
 
             if (disposing)
             {
-                Commit();                
+                Commit();
                 // Free any other managed objects here.
                 //
             }
@@ -99,7 +100,7 @@ namespace Tiny.EntityDb
 
 
 
-        ~JsonBaseEntityDatabase()
+        ~JsonEntityDatabase()
         {
 
         }

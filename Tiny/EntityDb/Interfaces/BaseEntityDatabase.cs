@@ -36,10 +36,10 @@ namespace Tiny.EntityDb
 
 
         /// <summary>
-        /// This method must be realised in inherited classes and must set internal 
-        /// field <see cref="elements"/> to initialised (non-null) state.
+        /// This method must be realized in inherited classes and must set internal 
+        /// field <see cref="elements"/> to initialized (non-null) state.
         /// </summary>
-        protected abstract void GetInitialData();
+        public abstract void GetInitialData();
 
         public virtual int Add(T elementToAdd)
         {
